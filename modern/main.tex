@@ -21,6 +21,18 @@
 %
 %-----------------------------------------------------------------------------------------------------------------------------------------------%
 
+%Balise versionning
+\newif\ifenglish
+% Uncomment the next line to set the flag to true.
+\englishtrue
+
+
+%----------------------------------------------------------------------------------------
+%	VARIABLES
+%----------------------------------------------------------------------------------------
+\newcommand{\myemail}{maxime.duvey@outlook.com}
+\newcommand{\phonenumber}{+33 648 34 40 56}
+
 
 %============================================================================%
 %
@@ -93,7 +105,11 @@
 
 %customize entries left, center and right
 \lhead{}
-\chead{ \small{DUVEY Maxime  $\cdot$ Software Engineer $\cdot$  Bourges, France  $\cdot$  \textcolor{sectcol}{\textbf{maximeduvey@hotmail.fr}}  $\cdot$ +33 648 34 40 56}}
+\ifenglish
+\chead{ \small{DUVEY Maxime  $\cdot$ Software Engineer $\cdot$  Paris, France  $\cdot$  \textcolor{sectcol}{\textbf{\myemail}}  $\cdot$ \phonenumber}}
+\else
+\chead{ \small{DUVEY Maxime  $\cdot$ Ingénieur Logiciel $\cdot$  Paris, France  $\cdot$  \textcolor{sectcol}{\textbf{\myemail}}  $\cdot$ \phonenumber}}
+\fi
 \rhead{}
 
 
@@ -319,7 +335,7 @@
 
 \begin{figure}[H]
 \begin{flushright}
-	\includegraphics[clip,width=0.2\linewidth]{photo.jpg}	%trimming relative to image size!
+	\includegraphics[clip,width=0.2\linewidth]{newphoto.png}	%trimming relative to image size!
 \end{flushright}
 \end{figure}
 
@@ -338,8 +354,8 @@
 
 \vspace{-114pt}
 
-\metasection{Status:}{Ingénieur/Développeur Logiciel}
-\metasection{Fields:}{Developement Logiciel, Expert en C++, C, C\#, } 
+\metasection{Status:}{Software and embedded systems engineer}
+\metasection{Fields:}{Developement Logiciel, et systemes embarqués} 
 \metasection{Tech:}{Visual Studio,eclipse, git, Jenkins, Freecad,  RTC, ...}
 \metasection{Interests:}{Robotique (Modélisation, Conception, Programation), informatique en général, science fiction }
 
@@ -365,40 +381,70 @@
 %----------------------------------------------------------------------------------------
 \cvsection{Experience}
 
-
-%
-\cvevent{Depuis 07/2021}{Ingénieur logiciel sur systèmes embarqués}{SII}{Développement logiciel sur système embarqué dans le domaine de l'aérospatial et de la défense.}{C++ , eclipse, CORBA, DDS, UDP, Design Patterns, MISRA, Linux}
-
+% Sagemcom
+\ifenglish
+ \cvevent{Since 09/2022}{Software and Embedded System Engineer}{Sagemcom}{Software and embedded systems (Linux and AOSP) development in the field of telecommunications and entertainment.}{Linux, Android, Android-studio, C++, C, Java, Kotlin, AOSP}
+\else
+\cvevent{Depuis 09/2022-}{Ingénieur logiciel et systeme embarqué}{Sagemcom}{Développement logiciel et système embarqué dans le domaine de télécomunication et du divertissement.}{Linux, Android, Android-studio, C++, C, Java, Kotlin, AOSP}
+\fi
 %\textcolor{softcol}{\hrule}
 
-%
+% SII - mbda
+\ifenglish
+\cvevent{07/2021-09/2022}{Software development on embedded systems}{SII}{Software development on embedded systems for aerospace and military company.}{C++ , eclipse, DDS, UDP, Design Patterns, MISRA, Linux}
+\else
+\cvevent{ 07/2021-09/2022}{Ingénieur logiciel sur systèmes embarqués}{SII}{Développement logiciel sur système embarqué dans le domaine de l'aérospatial et de la défense.}{C++ , eclipse, DDS, UDP, Design Patterns, MISRA, Linux}
+\fi
+%\textcolor{softcol}{\hrule}
+
+% ALTEN
+\ifenglish
+\cvevent{12/2018 - 2021}{Software development}{ALTEN}{Maintenance and improvement of network coverage optimization software (wave propagation), then interfacing C++ - C\#  for calculator with implementation of a license manager}{C\#, CLI, C++, Visual Studio, Jenkins, Design Patterns}
+\else
 \cvevent{12/2018 - 2021}{Ingénieur logiciel}{ALTEN}{Maintien et amélioration d'un logiciel d'optimisation de couverture réseau (propagation d'ondes), puis Interfacage C++ - C\# pour calculateur avec mise en place d'un gestionnaire de licence.}{C\#, CLI, C++, Visual Studio, Jenkins, Design Patterns}
-
+\fi
 
 %\textcolor{softcol}{\hrule}
 
-%
+% Bouygues Construction
+\ifenglish
+\cvevent{04/2018 - 10/2018}{Unity/UE4 Developer for Open Innovation VR department}{ Bouygues Construction}{Software and application development necessary for business needs in the field of virtual reality}{C\#, unity, Kinect, Réalité virtuel}
+\else
 \cvevent{04/2018 - 10/2018}{Développeur Unity/UE4 département Open Innovation VR}{ Bouygues Construction}{Développement des applications nécessaires aux besoins de l’entreprise dans le domaine de la réalité virtuelle}{C\#, unity, Kinect, Réalité virtuel}
+\fi
 
 %\textcolor{softcol}{\hrule}
 
-%
+% Epitech EIP
+\ifenglish
+\cvevent{11/2015 - 3/2018}{EIP end-of-studies project (Front and Lore pole leader)}{EPITECH}{Innovative professional project, from a team of 7 people, FPS - RPG in virtual reality}{C++, EU4, HTC Vive}
+\else
 \cvevent{11/2015 - 3/2018}{Projet de fin d'études EIP (chef pole Front et Lore)}{EPITECH}{Projet professionnel innovant, d'une équipe de 7 personnes, FPS - RPG en réalité virtuel}{C++, EU4, HTC Vive}
+\fi
 
 %\textcolor{softcol}{\hrule}
 
-
 %
+\ifenglish
+\cvevent{2 * 1 month}{ASSET (assistant professor for C, PHP, Python, Ruby, Shell)}{ETNA}{Supervising Bachelors and Masters, our goal is to train students in programming languages during their swimming pools}{Called for the first time to supervise the bachelors, called back the following year for the Masters}
+\else
 \cvevent{2 * 1 mois}{ASSET (assistant professeur C, PHP, Python, Ruby, Shell)}{ETNA}{Encadrant des Bachelors et Master, notre but et de former les élèves sur des langages de programmation durant leurs piscines}{Appelée une première fois pour encadrer les bachelors, rappelé l'année suivante pour les Master}
+\fi
 
+%\textcolor{softcol}{\hrule}
 
 %---------------------------------------------------------------------------------------
 %	EDUCATION SECTION
-%--------------------------------------------------------------------------------------
+%---------------------------------------------------------------------------------------
 \cvsection{Education}
 
-\cvevent{2013 - 2018}{Master's degree Software Engineering}{University of EPITECH}{Paris}{Principalement C - C++ - Linux}
+\cvevent{2013 - 2018}{Master's degree Software Engineering}{University of EPITECH}{Paris}{C - C++ - Linux}
+
+\ifenglish
+\cvevent{2016 - 2017}{4th year of study in China}{Jiaotong university}{Beijing}{Mainly C++ - Web - Linux}
+\else
 \cvevent{2016 - 2017}{4em année d'étude en Chine}{Jiaotong university}{Pékin}{Principalement  C++ - Web - Linux}
+\fi
 
 %\textcolor{softcol}{\hrule}
 
@@ -407,21 +453,34 @@
 \newpage
 %---------------------------------------------------------------------------------------
 %	Annexe
-%--------------------------------------------------------------------------------------
+%---------------------------------------------------------------------------------------
 \cvsection{Annexe}
 
+\ifenglish
+\begin{center}{This part brings together the technologies and languages that I learned and used on my various personal projects.
+Allowing a better representation of my profile and a better selection by CV parsers.}\end{center}
+\else
 \begin{center}{Cette partie regroupe les technologies et langages que j'ai appris et utilisés sur mes différents projets personnels.
 Permettant une meilleure représentation de mon profil et une meilleure sélection par les parseurs de CV.}\end{center}
+\fi
 
 \vspace{6pt}
-\newmetasection{Languages}{C++ (11<->17), C, C\#, Python(3), Java(Fx), Scripting, PHP, CSS, HTML, Ruby, Latex (ce CV est généré avec du Latex), XML, JSON, CSV, SQL}
+\newmetasection{Languages}{C++ (11<->17), C, C\#, Python(3), Java(Fx), Scripting, PHP, CSS, HTML, Ruby, Latex, XML, JSON, CSV, SQL, java, kotlin, }
+
+
+\ifenglish
 
 \vspace{10pt}
-\newmetasection{Outils:}{Visual studio, Visual Code, Eclipse, Notepade++, Git, SVN, RTC, Symfony, wamp server, Arduino, PlatformIO, Jenkins, Cura, Freecad, UE4, GitKraken, Virtual Machine, Postman, Jira, Trello}
+\newmetasection{Tools:}{Visual studio, Visual Code, Eclipse, Notepade++, Git, SVN, RTC, Symfony, wamp server, Arduino, PlatformIO, Jenkins, Cura, Freecad, UE4, GitKraken, Virtual Machine, Postman, Jira, Trello, wsl, cygwin, protobug, gRPC, AOSP (Android), vcpkg }
 
 \vspace{10pt}
+\newmetasection{Areas covered:}{Robotics (mechanical design, 3D modeling, 3D printing, electronics, PCB design, Embedded programming (on simple and complex environments), Creation of WEB sites, Implementation of Linux systems (Tails;) , Software programming in a very complex environment, implementation of a licensing system, creation of a mobile application, Pair-programming software programming, trading software (in progress), video stream processing.}
+\else
+
+\newmetasection{Outils:}{Visual studio, Visual Code, Eclipse, Notepade++, Git, SVN, RTC, Symfony, wamp server, Arduino, PlatformIO, Jenkins, Cura, Freecad, UE4, GitKraken, Virtual Machine, Postman, Jira, Trello, wsl, cygwin, protobug, gRPC, AOSP (Android), vcpkg }
+
 \newmetasection{Domaines parcourues:}{Robotique (conception mécanique, modélisation 3D, Impression 3D, électronique, Conception de PCB, Programmation embarqué (sur environnement simple et complexe), Création de sites WEB, Mise en place de systèmes Linux (Tails ;), Programmation Logiciel sur environnement très complexe, mise en place de système de licensing, création d'application mobile, Programmation logiciel en pair-programming, logiciel de trading (en cours), traitement de flux vidéo.} 
-
+\fi
 
 
 \vspace{6pt}
@@ -429,6 +488,16 @@ Permettant une meilleure représentation de mon profil et une meilleure sélecti
 %---------------------------------------------------------------------------------------
 %	Langues
 %--------------------------------------------------------------------------------------
+\ifenglish
+\cvsection{Languages}
+
+\vspace{6pt}
+\newmetasection{French}{first language}
+\vspace{-6pt}
+\newmetasection{English}{800 Toeic}
+\vspace{-6pt}
+\newmetasection{Japanese}{learning in progress}
+\else
 \cvsection{Langues}
 
 \vspace{6pt}
@@ -436,9 +505,10 @@ Permettant une meilleure représentation de mon profil et une meilleure sélecti
 \vspace{-6pt}
 \newmetasection{Anglais}{800 Toeic}
 \vspace{-6pt}
-\newmetasection{Chinois}{Notions}
-\vspace{-6pt}
 \newmetasection{Japonais}{Notions - apprentissage en cours}
+\fi
+
+
 
 
 %-------------------------------------------------------------------------------------------------
@@ -446,7 +516,7 @@ Permettant une meilleure représentation de mon profil et une meilleure sélecti
 %--------------------------------------------------------------------------------------------------
 \null
 \vspace*{\fill}
-\hspace{-0.25\linewidth}\colorbox{bgcol}{\makebox[1.5\linewidth][c]{\mystrut \small \textcolor{white}{DUVEY Maxime} $\cdot$ \textcolor{white}{maximeduvey@hotmail.fr  +33 6 48 34 40 56}}}
+\hspace{-0.25\linewidth}\colorbox{bgcol}{\makebox[1.5\linewidth][c]{\mystrut \small \textcolor{white}{DUVEY Maxime} $\cdot$ \textcolor{white}{\myemail  \phonenumber}}}
 
 
 
