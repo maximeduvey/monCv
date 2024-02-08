@@ -24,14 +24,14 @@
 %Balise versionning
 \newif\ifenglish
 % Uncomment the next line to set the flag to true.
- %\englishtrue
+ \englishtrue
 
 
 %----------------------------------------------------------------------------------------
 %	VARIABLES
 %----------------------------------------------------------------------------------------
-\newcommand{\myemail}{maxime.duvey@outlook.com}
-\newcommand{\phonenumber}{+33 648 34 40 56}
+\newcommand{\myemail}{}
+\newcommand{\phonenumber}{}
 
 
 %============================================================================%
