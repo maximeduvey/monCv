@@ -24,7 +24,7 @@
 %Balise versionning
 \newif\ifenglish
 % Uncomment the next line to set the flag to true.
- %\englishtrue
+\englishtrue
 
 
 %----------------------------------------------------------------------------------------
@@ -364,12 +364,12 @@
 \ifenglish
 %\metasection{Status:}{Freelance available: \textbf{ 1 February 2024 } }
 \metasection{Fields:}{Software and embedded software engineer} 
-\metasection{Tech:}{C++,  C, java, Kotlin, linux, AOSP, Python}
+\metasection{Tech:}{C++,  C, Kotlin, java, linux, AOSP, Python}
 \metasection{Interests:}{Robotics (Modeling, Design, Programming), economic rules, computer science in general, science fiction }
 \else
 %\metasection{Status:}{Freelance disponible a partir:  \textbf{ 1 Février 2024}}
 \metasection{Fields:}{Developement logiciel et logiciels embarqués} 
-\metasection{Tech:}{C++,  C, java, Kotlin, linux, AOSP, Python}
+\metasection{Tech:}{C++,  C, Kotlin, java, linux, AOSP, Python}
 \metasection{Interests:}{Robotique (Modélisation, Conception, Programation), fonctionnement des regles économiques,  informatique en général, science fiction }
 \fi
 
@@ -395,17 +395,25 @@
 %----------------------------------------------------------------------------------------
 \cvsection{Experience}
 
+% CELAD - Renault
+\ifenglish
+ \cvevent{Since 02/2024}{Software engineer on embedded system AOSP}{CELAD-Renault}{Software development for platform and external app on embedded system AOSP for automobiles.}{AOSP, Kotlin, Android-studio, java, Soong, Gitlab-ci}
+\else
+\cvevent{Depuis 02/2024-}{Ingénieur applicatif sur systeme embarqué}{CELAD-Renault}{Développement applicatif platform et extern sur systeme embarqué AOSP automobile.}{AOSP, Kotlin, Android-studio, java, Soong, Gitlab-ci}
+\fi
+%\textcolor{softcol}{\hrule}
+
 % Sagemcom
 \ifenglish
- \cvevent{Since 09/2022}{Software and Embedded System Engineer}{Sagemcom}{Software and embedded systems (Linux and AOSP) development in the field of telecommunications and entertainment.}{Linux, Android, Android-studio, C++, C, Java, Kotlin, AOSP}
+ \cvevent{09/2022 - 12/2023}{Software and embedded system engineer}{Sagemcom}{Software and embedded systems (Linux and AOSP) development in the field of telecommunications and entertainment.}{Linux, Android, Android-studio, C++, C, Java, Kotlin, AOSP}
 \else
-\cvevent{Depuis 09/2022-}{Ingénieur logiciel et systeme embarqué}{Sagemcom}{Développement logiciel et système embarqué dans le domaine de télécomunication et du divertissement.}{Linux, Android, Android-studio, C++, C, Java, Kotlin, AOSP}
+\cvevent{09/2022 - 12/2023}{Ingénieur logiciel et systeme embarqué}{Sagemcom}{Développement logiciel et système embarqué dans le domaine de télécomunication et du divertissement.}{Linux, Android, Android-studio, C++, C, Java, Kotlin, AOSP}
 \fi
 %\textcolor{softcol}{\hrule}
 
 % SII - mbda
 \ifenglish
-\cvevent{07/2021-09/2022}{Software development on embedded systems}{SII}{Software development on embedded systems for aerospace and military company.}{C++ , eclipse, DDS, UDP, Design Patterns, MISRA, Linux}
+\cvevent{07/2021-09/2022}{Software engineer on embedded systems}{SII}{Software development on embedded systems for aerospace and military company.}{C++ , eclipse, DDS, UDP, Design Patterns, MISRA, Linux}
 \else
 \cvevent{ 07/2021-09/2022}{Ingénieur logiciel sur systèmes embarqués}{SII}{Développement logiciel sur système embarqué dans le domaine de l'aérospatial et de la défense.}{C++ , eclipse, DDS, UDP, Design Patterns, MISRA, Linux}
 \fi
@@ -413,7 +421,7 @@
 
 % ALTEN
 \ifenglish
-\cvevent{12/2018 - 2021}{Software development}{ALTEN}{Maintenance and improvement of network coverage optimization software (wave propagation), then interfacing C++ - C\#  for calculator with implementation of a license manager}{C\#, CLI, C++, Visual Studio, Jenkins, Design Patterns}
+\cvevent{12/2018 - 2021}{Software engineer}{ALTEN}{Maintenance and improvement of network coverage optimization software (wave propagation), then interfacing C++ - C\#  for calculator with implementation of a license manager}{C\#, CLI, C++, Visual Studio, Jenkins, Design Patterns}
 \else
 \cvevent{12/2018 - 2021}{Ingénieur logiciel}{ALTEN}{Maintien et amélioration d'un logiciel d'optimisation de couverture réseau (propagation d'ondes), puis Interfacage C++ - C\# pour calculateur avec mise en place d'un gestionnaire de licence.}{C\#, CLI, C++, Visual Studio, Jenkins, Design Patterns}
 \fi
@@ -488,12 +496,12 @@ Permettant une meilleure représentation de mon profil et une meilleure sélecti
 \newmetasection{Tools:}{Visual studio, Visual Code, Eclipse, Notepade++, Git, SVN, RTC, Symfony, wamp server, Arduino, PlatformIO, Jenkins, Cura, Freecad, UE4, GitKraken, Virtual Machine, Postman, Jira, Trello, wsl, cygwin, protobug, gRPC, AOSP (Android), vcpkg, pybind11  }
 
 \vspace{10pt}
-\newmetasection{Areas covered:}{Robotics (mechanical design, 3D modeling, 3D printing, electronics, PCB design, Embedded programming (on simple and complex environments), Creation of WEB sites, Implementation of Linux systems (Tails;) , Software programming in a very complex environment, implementation of a licensing system, creation of a mobile application, Pair-programming software programming, trading software, video stream processing.}
+\newmetasection{Areas covered:}{Robotics (mechanical design, 3D modeling, 3D printing, electronics, PCB design, Embedded programming (on simple and complex environments), Creation of WEB sites, Implementation of Linux systems (Tails;) , Software programming in a very complex environment, implementation of a licensing system, creation of a mobile application, Pair-programming software programming, trading software, video stream processing, LIDAR data processing, UART, SPI, I2C, CANBus, compilation cross-platform.}
 \else
 
 \newmetasection{Outils:}{Visual studio, Visual Code, Eclipse, Notepade++, Git, SVN, RTC, Symfony, wamp server, Arduino, PlatformIO, Jenkins, Cura, Freecad, UE4, GitKraken, Virtual Machine, Postman, Jira, Trello, wsl, cygwin, protobug, gRPC, AOSP (Android), vcpkg, pybind11  }
 
-\newmetasection{Domaines parcourues:}{Robotique (conception mécanique, modélisation 3D, Impression 3D, électronique, Conception de PCB, Programmation embarqué (sur environnement simple et complexe), Création de sites WEB, Mise en place de systèmes Linux (Tails ;), Programmation Logiciel sur environnement très complexe, mise en place de système de licensing, création d'application mobile, Programmation logiciel en pair-programming, logiciel de trading, traitement de flux vidéo.} 
+\newmetasection{Domaines parcourues:}{Robotique (conception mécanique, modélisation 3D, Impression 3D, électronique, Conception de PCB, Programmation embarqué (sur environnement simple et complexe), Création de sites WEB, Mise en place de systèmes Linux (Tails ;), Programmation Logiciel sur environnement très complexe, mise en place de système de licensing, création d'application mobile, Programmation logiciel en pair-programming, logiciel de trading, traitement de flux vidéo, traitement donnée LIDAR, UART, SPI, I2C, CANBus, compilation cross-platform, .} 
 \fi
 
 
